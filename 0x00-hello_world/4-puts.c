@@ -4,13 +4,12 @@
 /**
  * main - prints string
  * with a new line
- * Return : 0
+ * Return: 0
  */
 int main(void)
 {
 	/* print a string to stdout */
 	putchar('"');
-	puts("Prgramming is like building a multilingual puzzle");
+	puts("Programming is like building a multilingual puzzle");
 	return (0);
 }
-
