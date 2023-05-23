@@ -7,13 +7,12 @@
  */
 int main(void)
 {
-	char a = 97;
+	char a = 'a';
 
-	while (a < 123)
+	while (a <= 'z')
 	{
-		if (a == 101 || a == 102)
-			continue;
-		putchar(a);
+		if (a != 'e' && a != 'q')
+			putchar(a);
 		a++;
 	}
 	putchar('\n');
