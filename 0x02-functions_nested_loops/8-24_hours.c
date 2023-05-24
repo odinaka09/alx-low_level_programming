@@ -9,7 +9,7 @@ void jack_bauer(void)
 	char mins;
 	char hrs = 0;
 
-	while (i < 24)
+	while (hrs < 24)
 	{
 		mins = 0;
 
