@@ -21,6 +21,6 @@ void times_table(void)
 			r++;
 		}
 		c++;
-		_putchar('\n')
+		_putchar('\n');
 	}
 }
