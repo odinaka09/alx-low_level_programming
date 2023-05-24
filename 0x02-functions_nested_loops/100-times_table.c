@@ -1,59 +1,45 @@
 #include "main.h"
 
 /**
- * print_times_table - print times table of n
+ * print_times_table - Prints a multiplication table up to param
+ * @n: The number to be treated
  *
- * @n: integer argument
+ * Return: Number matrix
  */
-
 void print_times_table(int n)
 {
+	int a, b, op;
+
 	if (n >= 0 && n <= 15)
 	{
-		int row = 0, column;
-		int product;
-
-		while (row <= n)
+		for (a = 0; a <= n; a++)
 		{
-			column = 0;
-
-			while (column <= n)
+			_putchar(48);
+			for (b = 1; b <= n; b++)
 			{
-				product = row * column;
-
-				if (column == 0)
+				op = a * b;
+				_putchar(44);
+				_putchar(32);
+				if (op <= 9)
 				{
-					_putchar('0' + product);
+					_putchar(32);
+					_putchar(32);
+					_putchar(op + 48);
 				}
-				else if (product <= 9)
+				else if (op <= 99)
 				{
-					_putchar(',');
-					_putchar(' ');
-					_putchar(' ');
-					_putchar(' ');
-					_putchar('0' + product);
+					_putchar(32);
+					_putchar((op / 10) + 48);
+					_putchar((op % 10) + 48);
 				}
-				else if (product > 9 && product < 100)
+				else
 				{
-					_putchar(',');
-					_putchar(' ');
-					_putchar(' ');
-					_putchar('0' + (product / 10));
-					_putchar('0' + (product % 10));
+					_putchar(((op / 100) % 10) + 48);
+					_putchar(((op / 10) % 10) + 48);
+					_putchar((op % 10) + 48);
 				}
-				else if (product >= 100)
-				{
-					_putchar(',');
-					_putchar(' ');
-					_putchar('0' + (product / 100));
-					_putchar('0' + ((product / 10) % 10));
-					_putchar('0' + (product % 10));
-				}
-
-				column++;
 			}
 			_putchar('\n');
-			row++;
 		}
 	}
 }

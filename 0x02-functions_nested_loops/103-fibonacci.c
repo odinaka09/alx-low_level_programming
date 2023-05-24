@@ -1,30 +1,31 @@
 #include <stdio.h>
 
 /**
- * main - print sum of evens of fib up to 4,000,000
- *
+ * main - finds and prints the sum of the even-valued terms
+ * followed by a new line
  * Return: Always 0 (Success)
  */
-
 int main(void)
 {
-	int evens_sum = 0;
-	int a, b;
-	int sum = 1;
+	int i;
+	unsigned long int j, k, next, sum;
 
-	a = 1;
-	b = 1;
+	j = 1;
+	k = 2;
+	sum = 0;
 
-	while (b < 4000000)
+	for (i = 1; i <= 33; ++i)
 	{
-		a = b;
-		b = sum;
-		sum = a + b;
-		if ((sum <= 4000000) && (sum % 2 == 0))
+		if (j < 4000000 && (j % 2) == 0)
 		{
-			evens_sum += sum;
+			sum = sum + j;
 		}
+		next = j + k;
+		j = k;
+		k = next;
 	}
-	printf("%d\n", evens_sum);
+
+	printf("%lu\n", sum);
+
 	return (0);
 }
