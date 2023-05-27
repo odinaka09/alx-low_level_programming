@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * int _isupper(int c) - checks if c is upper
+ * _isupper - checks if c is upper
  * @c: int to check
  * Return: Always 0.
  */
