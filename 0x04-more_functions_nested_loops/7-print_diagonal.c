@@ -1,0 +1,33 @@
+#include "main.h"
+
+/**
+ * print_diagonal - prints a line
+ * @n: int to print amount of times
+ * Return: Always 0.
+ */
+void print_diagonal(int n)
+{
+	int a, b;
+
+	if (n <= 0)
+	{
+		_putchar('\n');
+	}
+
+	else
+	{
+		a = 0;
+		while (a <= n)
+		{
+			b = 0;
+			while (b < a)
+			{
+				_putchar(' ');
+				b++;
+			}
+			_putchar('\\');
+			_putchar('\n');
+			a++;
+		}
+	}
+}
