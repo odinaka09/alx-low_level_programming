@@ -13,6 +13,8 @@ void print_line(int n)
 	{
 		_putchar('\n');
 	}
+
+	b = 1;
 	while (b <= n)
 	{
 		_putchar('_');
