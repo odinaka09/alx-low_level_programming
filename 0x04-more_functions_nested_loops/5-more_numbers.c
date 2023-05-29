@@ -7,14 +7,14 @@
  */
 void more_numbers(void)
 {
-	char c;
+	int c;
 	int b;
 
 	b = 0;
 	while (b < 10)
 	{
-		c = '0'
-		while (c < '15')
+		c = 0;
+		while (c < 15)
 		{
 			if (c >= 10)
 			{
