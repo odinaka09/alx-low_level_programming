@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * _strcat - concatenate two strings
+ * _strncat - concatenate two strings
  * @dest: string to be appended to
  * @src: string to append
- * @n: number of bytes to copy from src
+ * @n: max number of bytes to be used from src
  * Return: concatenated string
  */
 
-char *_strcat(char *dest, char *src, int n)
+char *_strncat(char *dest, char *src, int n)
 {
 	int i = 0;
 	int j = 0;
