@@ -7,7 +7,7 @@
  */
 void void print_rev(char *s)
 {
-	int i;4-print_rev.c
+	int i;
 
 	for (i = 0; s[i]; i--)
 	{
