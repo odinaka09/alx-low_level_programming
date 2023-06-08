@@ -5,13 +5,20 @@
  * @s: character to print
  * Return: void
  */
-void void print_rev(char *s)
+void print_rev(char *s)
 {
+	int length = 0;
 	int i;
 
-	for (i = 0; s[i]; i--)
+	while (s[i] != '\0')
 	{
-		_putchar(s[i]);
+		length++;
+
+	}
+
+	for (i = length - 1; i > 0; i--)
+	{
+		_putchar(s[length]);
 	}
 	_putchar('\n');
 }
