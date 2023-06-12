@@ -7,7 +7,7 @@
  * @n: number of bytes to copy
  * Return: char
  */
-char *_strncat(char *dest, char *src)
+char *_strncat(char *dest, char *src, int n)
 {
 	int i, j;
 
